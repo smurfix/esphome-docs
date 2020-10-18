@@ -12,7 +12,7 @@ them publish values.
 
     #include "esphome.h"
 
-    class MyCustomComponent : public Component, public UARTDevice {
+    class MyCustomComponent : public esphome::Component, public esphome::uart::UARTDevice {
      public:
       MyCustomComponent(UARTComponent *parent) : UARTDevice(parent) {}
 
